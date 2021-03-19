@@ -388,6 +388,21 @@ color: #f06060;
 .feature p {
 	font-size: 14px;
 }
+
+.features__paragraph{
+	text-align:justify;
+	margin: 0;
+}
+
+.features__list {
+	padding-left: 2rem;
+	text-align: left;
+	list-style-type: circle;
+}
+
+.features__list > li {
+	
+}
 .feature .icon {
 	
 	font-size: 4.8em;
