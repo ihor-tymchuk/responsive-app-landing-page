@@ -14,7 +14,7 @@ $(document).ready(function(){
     });
 	
 	$('#button-send').click(function(event){
-		$('#button-send').html('Sending E-Mail...');
+		$('#button-send').html('ПОЧЕКАЙТЕ ...');
 		event.preventDefault();
 		
 		$('html, body').scrollTo( $('#contact'), 'fast' );
@@ -25,17 +25,17 @@ $(document).ready(function(){
 			success: function(html) {
 				if(html.success == '1')
 				{
-					$('#button-send').html('Send E-Mail');
+					$('#button-send').html('ВІДПРАВИТИ');
 					$('#success').show();
 				}
 				else
 				{
-					$('#button-send').html('Send E-Mail');
+					$('#button-send').html('ВІДПРАВИТИ');
 					$('#error').show();
 				}					
 			},
 			error: function(){
-				$('#button-send').html('Send E-Mail');
+				$('#button-send').html('ВІДПРАВИТИ');
 				$('#error').show();
 			}
 		});
