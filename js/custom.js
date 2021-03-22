@@ -14,7 +14,7 @@ $(document).ready(function(){
     });
 	
 	$('#button-send').click(function(event){
-		$('#button-send').html('ПОЧЕКАЙТЕ ...');
+		$('#button-send').html('ЗАЧЕКАЙТЕ ...');
 		event.preventDefault();
 		
 		$('html, body').scrollTo( $('#contact'), 'fast' );

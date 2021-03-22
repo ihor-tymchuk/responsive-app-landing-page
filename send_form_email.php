@@ -1,6 +1,6 @@
 <?php 
 // EDIT THE 2 LINES BELOW AS REQUIRED
-$send_email_to = "igortym777@ukr.net";
+$send_email_to = "ihor@gib-education.com";
 $email_subject = "Your email subject line";
 function send_email($name,$email,$email_message)
 {
