@@ -77,7 +77,7 @@ if($return_array['success'] == '1')
 	send_email($name,$email,$message);
 } 
 header('Content-type: text/json');
-echo json_encode($return_array);
+// echo json_encode($return_array);
 die();
 ?>
 
