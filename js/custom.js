@@ -18,11 +18,13 @@ $(document).ready(function(){
 		event.preventDefault();
 		
 		$('html, body').scrollTo( $('#contact'), 'fast' );
+		
 		$.ajax({
 			type: 'POST',
-			url: 'send_form_email.php',
-			data: $('#contact_form').serialize(),
+			url: 'http://gib-education.com/php/send_form_email.php',
+			data: $('form').serialize(),
 			success: function(html) {
+				console.log(html)
 				if(html.success == '1')
 				{
 					$('#button-send').html('ВІДПРАВИТИ');
@@ -48,5 +50,5 @@ $(document).ready(function(){
 
 function valemail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+    return true;
 }
