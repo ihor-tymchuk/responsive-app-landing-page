@@ -7,7 +7,7 @@ function send_email($name,$email,$email_message)
   global $send_email_to;
   global $email_subject;
   $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+  $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
   $headers .= "From: ".$email. "\r\n";
   $message = "<strong>Email = </strong>".$email."<br>";
   $message .= "<strong>Name = </strong>".$name."<br>";  
@@ -31,7 +31,7 @@ function validate($name,$email,$message)
   else
   {
     // $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    if(strlen($email) < 10) {
+    if(strlen($email) < 1) {
       $return_array['success'] = '0';
       $return_array['email_msg'] = 'number phone less 10 digits';  
     }
@@ -77,8 +77,9 @@ if($return_array['success'] == '1')
 	send_email($name,$email,$message);
 } 
 header('Content-type: text/json');
-echo json_encode($return_array);
-header("refresh: 10; url = http://gib-education.com");
+// echo json_encode($return_array);
+
+header("refresh: 0; url = http://gib-education.com");
 //url = https://www.geeksforgeeks.org/"
 die();
 ?>
