@@ -489,6 +489,14 @@ color: #f06060;
 	text-align: center;
 	margin-bottom: 30px;
 }
+/* experience */
+.experience_h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #777777;
+	/* margin: 20px 0; */
+	text-align: justify;
+}
 
 /* Random Quote */
 .quotes {
@@ -648,6 +656,66 @@ footer a.icon:hover {
 }
 
 /* List https://www.formget.com/css-lists/ */
+/* type1 */
+.list-type1{
+	width:auto;
+	margin:0 auto;
+	}
+	
+	.list-type1 ol{
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	font-size:20px;
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin-bottom: 4em;
+	}
+	.list-type1 ol ol{
+	margin: 0 0 0 2em;
+	}
+	
+	.list-type1 p{
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	*padding: .4em;
+	margin: .5em 0;
+	background: #4e97cc;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: 10em;
+	transition: all .2s ease-in-out;
+	}
+	
+	.list-type1 p:hover{
+	background: #fac370;
+	text-decoration:none;
+	transform: scale(1.1);
+	}
+	
+	.list-type1 p:before{
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background:#000000;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	text-align: center;
+	font-weight: bold;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	color:#FFF;
+	}
+/* type5 */
 .list-type5{
 	width:auto;
 	margin:0 auto;
