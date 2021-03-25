@@ -35,19 +35,19 @@
 				<nav class="top-bar">
 					<ul class="title-area">
 						<li class="name logo">
-							<!-- <a href="#"><img src="img/74-740586.png"  alt=""></a> -->
 							<a href="#" class="logo_gib"><span class="logo_gib__black">gib-</span><span
 									class="logo_gib__blue">education</span></a>
 						</li>
-						<li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li>
+						<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 					</ul>
 
 					<section class="top-bar-section">
 						<ul class="right" id="menu">
-							<li data-magellan-arrival="features"><a href="#features">Головна</a></li>
-							<li data-magellan-arrival="product"><a href="#product">Тренінг</a></li>
-							<li data-magellan-arrival="pricing_l"><a href="#pricing_l">Навчання</a></li>
-							<li data-magellan-arrival="pricing-table"><a href="#pricing-table">Ціни</a></li>
+							<li data-magellan-arrival="header"><a href="#">Головна</a></li>
+							<li data-magellan-arrival="experience"><a href="#experience">Власний досвід</a></li>
+							<li data-magellan-arrival="features"><a href="#features">Тренінг</a></li>
+							<li data-magellan-arrival="pricing-table"><a href="#pricing-table">Навчання</a></li>
+							<!-- <li data-magellan-arrival="pricing_l"><a href="#pricing_l">Навчання</a></li> -->
 							<li data-magellan-arrival="contact"><a href="#contact">Зв'язок з нами</a></li>
 						</ul>
 					</section>
@@ -55,41 +55,61 @@
 			</div>
 		</div>
 	</div>
-
-	<header id="header">
+	<header id="header" data-magellan-destination="header">
 		<div class="row">
-
-			<div class="large-6 columns">
-				<!-- <div id="teaser-slider-2">
-							<div class="flexslider">
-								<ul class="slides">
-									<li>
-										<img src="img/slides/unnamed3.jpg" alt="Petrichor - slider">
-									</li>
-									<li>
-										<img src="img/slides/unnamed.png" alt="Petrichor - slider">
-									</li>
-									<li>
-										<img src="img/slides/iphoneshots.jpg" alt="Petrichor - slider">
-									</li>
-								</ul>
-							</div> 
-						</div> -->
-			</div>
-
 			<div class="large-6 columns">
 				<h1 class="header__h1">Як продавати під час карантину</h1>
 				<h1 class="header__h1 red">Лекція 25.03.21</h1>
 				<span class="subheading">При реєстрації на лекцію ви отримаєте приклад оформлення ТТН</span>
-				<!-- <a class="download-btn" href="#" target="_blank"></a> -->
 				<a href="#pricing"><button class="download-btn-2"><span class="while_link">Зареєструватися</span>
 					</button></a>
 			</div>
-
 		</div>
 	</header>
 
-	<div class="section features" data-magellan-destination="features" id="features">
+	<div class = "div-mark" id="experience" data-magellan-destination="experience"></div>
+	<div id="product" class="section product gray" data-magellan-destination="experience">
+		<div class="row">
+			<div class="large-12 columns">
+				<h2>За рахунок чого я збільшив продаж одягу у 3 рази</h2>
+				<div class="row">
+					<div class="small-4 columns hints iphone">
+						<div class="hint hint-left hint-top">
+							<h3>Якісні залишки у онлайн доступі</h3>
+							<p>Ви знаєте що у вас є, насправді на складі?</p>
+							<span class="arrow"></span>
+						</div>
+						<div class="hint hint-left hint-bottom">
+							<h3>Відправлення у день замовлення</h3>
+							<p>Ви особисто хотіли чекати на доставку замовлення 5 днів?
+							</p>
+							<span class="arrow"></span>
+						</div>
+					</div>
+					<div class="small-4 columns hints iphone">
+						<div class="image-align">
+							<img src="img/slides/unnamed3.jpg" alt="">
+						</div>
+					</div>
+					<div class="small-4 columns hints iphone">
+						<div class="hint hint-right hint-bottom">
+							<h3>Правильне формування ціни</h3>
+							<p>Що ви враховуєте при формуванні ціни?</p>
+							<span class="arrow"></span>
+						</div>
+						<div class="hint hint-right hint-bottom">
+							<h3>Детальний опис товару</h3>
+							<p>Хто крім вас може описати краще ваш товар?</p>
+							<span class="arrow"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "div-mark" id="features" data-magellan-destination="features"></div>
+	<div class="section features" data-magellan-destination="features" >
 		<div class="row hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3b">
 			<h2 id="features-mark" class="features__head">Три речі, які важливі для дропшоперів (ІНТЕРНЕТЧИКІВ)</h2>
 			<div class="large-4 columns feature">
@@ -103,7 +123,6 @@
 					<li>зручність роботи з мілкими дропшоперами;</li>
 					<li>покращення сервісу.</li>
 				</ul>
-
 				</p>
 			</div>
 			<div class="large-4 columns feature">
@@ -116,71 +135,22 @@
 				</p>
 			</div>
 			<div class="large-4 columns feature">
-				<!-- <span class="icon icon-credit-card hi-icon"></span>
-				<i class="fas fa-money-check-alt"></i> -->
 				<span class="icon fa fa-dollar hi-icon"></span>
 				<h3>Ціна</h3>
 				<p class="features__paragraph">Ціна не просто собівартість та націнка, в ціну потрібно закладати
 					витрати: рекламу, логістику, паркування, комісії, та націнка. Також ціна не завжди повинна бути
 					нижча ніж у конкурентів, тому що якщо у вас низька ціна значить у вас низький рівень обслуговування.
 					Низька ціна не завжди ДОБРЕ!
-
 				</p>
 			</div>
 		</div>
 	</div>
-	<div id="product" class="section product gray" data-magellan-destination="product">
-		<div class="row">
-			<div class="large-12 columns">
-				<h2>За рахунок чого я збільшив продаж одягу у 3 рази</h2>
-				<div class="row">
-					<div class="small-4 columns hints iphone">
-						<div class="hint hint-left hint-top">
-							<h3>Якісні залишки у онлайн доступі</h3>
-							<p>Ви знаєте що у вас є, насправді на складі?
 
-							</p>
-							<span class="arrow"></span>
-						</div>
-						<div class="hint hint-left hint-bottom">
-							<h3>Відправлення у день замовлення</h3>
-							<p>Ви особисто хотіли чекати на доставку замовлення 5 днів?
-
-							</p>
-							<span class="arrow"></span>
-						</div>
-					</div>
-					<div class="small-4 columns hints iphone">
-						<div class="image-align">
-							<img src="img/slides/unnamed3.jpg" alt="">
-						</div>
-
-					</div>
-					<div class="small-4 columns hints iphone">
-						<div class="hint hint-right hint-top">
-							<h3>Правильне формування ціни</h3>
-							<p>Що ви враховуєте при формуванні ціни?
-
-							</p>
-							<span class="arrow"></span>
-						</div>
-						<div class="hint hint-right hint-bottom">
-							<h3>Детальний опис товару</h3>
-							<p>Хто крім вас може описати краще ваш товар?
-
-							</p>
-							<span class="arrow"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row price-table" id="pricing-table" data-magellan-destination="pricing-table">
+	<div class = "div-mark" id="pricing-table" data-magellan-destination="pricing-table"></div>
+	<div class="row price-table" data-magellan-destination="pricing-table">
 		<div class="large-4 columns large-4-2">
 			<ul class="pricing-table">
 				<li class="title title_line4">Лекція</li>
-				<!-- <li class="description">With basic features</li> -->
 				<li class="price">200 грн.</li>
 				<a class="price-table-toggle">Тривалість 2 год</a>
 				<ul class="price-table-features">
@@ -204,12 +174,9 @@
 		<div class="large-4 columns" id = "pricing_l" data-magellan-destination="pricing_l">
 			<ul class="pricing-table">
 			  <li class="title ">Навчання по налаштуванню роботи з дроперами</li>
-			  <!-- <li class="description">With awesome features</li> -->
 			  <li class="price">14 000 грн</li>
-			  <a class="price-table-toggle">+ Show features</a>
 			  <ul class="price-table-features">
-				  <li class="bullet-item">6 практичних уроків, 
-					  індивідуальний розбір кожгого учасника навчання</li>
+				  <li class="bullet-item">6 практичних уроків, індивідуальний розбір кожгого учасника навчання</li>
 			  </ul>
 			  <li class="cta-button"><a class="button radius" href="#contact">Забронювати</a></li>
 			</ul>
@@ -217,9 +184,8 @@
 	</div>
 	</div>
 
-	<div id="contact" class="section contact gray" data-magellan-destination="contact">
-
-
+	<div class = "div-mark" id="contact" data-magellan-destination="contact"></div>
+	<div class="section contact gray" data-magellan-destination="contact">
 		<div class="row">
 			<div class="large-12 columns">
 				<h2>Зв'язатися з нами</h2>
@@ -229,30 +195,10 @@
 				<form action="http://gib-education.com/php/send_form_email.php" method="post" name="form">
 					<input name="name" type="text" placeholder="Ваше ім'я" /> <br>
 					<input name="email" type="text" placeholder="Телефон" /> <br>
-					<label>Текст Повідомлення</label>
+					<label>Текст повідомлення</label>
 					<textarea cols="32" name="message" rows="10" >  </textarea> <br>
-				
-					<a href="#"><button type="submit" value="Відправити" class="email_btn" >Відправити</button>	</a>
+					<a href="http://gib-education"><button type="submit" value="Відправити" class="email_btn" >Відправити</button>	</a>
 				</form>
-
-
-				<!-- <form method="post" action="#" id="contactform">
-					<div>
-						<label for="name">Ім'я</label>
-						<input type="text" class="input-field" id="name" name="name" value="">
-					</div>
-					<div>
-						<label for="email">Телефон</label>
-						<input type="text" class="input-field" id="email" name="email" value="">
-					</div>
-					<div>
-						<label>Що продаєте, товар, галузь</label>
-						<textarea id="message" name="message"></textarea>
-					</div>
-				</form>
-					<a id="button-send" href="#" title="Send Email" class="button" style="width:100%;">ВІДПРАВИТИ</a>
-					<div id="success">Дякуємо що залиши заявку, найближчим часом ми з вами зв'яжемось</div>
-					<div id="error">Повідомлення не відправлено. Спробуйте пізніше</div> -->
 				
 			</div>
 		</div>
@@ -262,11 +208,12 @@
 			<div class="large-6 columns">
 				<ul class="inline-list">
 					<li class="copyright">2021 &copy; gib-education.com</a></li>
-
 				</ul>
 			</div>
 		</div>
 	</footer>
+
+	
 
 	
 
