@@ -10,16 +10,18 @@ by EGrappler.com
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* media */
-@media screen and (min-width: 940px) {
+@media all and (max-width: 940px) {
 	.div-mark {
-	  height: auto;
+	  min-height: auto;
 	}
   }
-
-  .div-mark {
-	min-height: 78px;
-	width: auto;
-  } 
+  @media all and (min-width: 941px){
+	.div-mark {
+		min-height: 78px;
+		width: auto;
+	  } 
+  }
+  
   
 /* Body */
 
@@ -644,6 +646,61 @@ footer a.icon {
 footer a.icon:hover {
 	color: #4e97cc !important;
 }
+
+/* List https://www.formget.com/css-lists/ */
+.list-type5{
+	width:auto;
+	margin:0 auto;
+	}
+	.list-type5 ol {
+	list-style-type: none;
+	list-style-type: decimal !ie; /*IE 7- hack*/
+	margin: 0;
+	margin-left: 1em;
+	padding: 0;
+	counter-reset: li-counter;
+	}
+	.list-type5 ol li{
+	position: relative;
+	margin-bottom: 1.5em;
+	padding: 0.5em;
+	background-color: #4e97cc;
+	padding-left: 58px;
+	}
+	
+	.list-type5 p{
+	color:rgb(255, 255, 255);
+	font-size:20px;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+	}
+	
+	.list-type5 li:hover{
+	box-shadow:inset -1em 0 #F0D756;
+	-webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: box-shadow 0.5s;
+	}
+	
+	.list-type5 ol li:before {
+	position: absolute;
+	top: -0.3em;
+	left: -0.5em;
+	width: 1.8em;
+	height: 1.2em;
+	font-size: 2em;
+	line-height: 1.2;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: #F0D756;
+	transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	z-index: 99;
+	overflow: hidden;
+	content: counter(li-counter);
+	counter-increment: li-counter;
+	}
 
 /* COLORS */
 .green .button,
