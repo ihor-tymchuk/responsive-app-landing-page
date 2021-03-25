@@ -60,7 +60,7 @@
 			<div class="large-6 columns"></div>
 			<div class="large-6 columns">
 				<h1 class="header__h1">Як продавати під час карантину</h1>
-				<h1 class="header__h1 red">Лекція 25.03.21</h1>
+				<h1 class="header__h1 red">Лекція 31.03.21</h1>
 				<span class="subheading">При реєстрації на лекцію ви отримаєте приклад оформлення ТТН</span>
 				<a href="#pricing"><button class="download-btn-2"><span class="while_link">Зареєструватися</span>
 					</button></a>
@@ -68,7 +68,7 @@
 		</div>
 	</header>
 
-	<div class = "div-mark" id="experience" data-magellan-destination="experience"></div>
+	<!-- <div class="div-mark" id="experience" data-magellan-destination="experience"></div> -->
 	<div id="product" class="section product gray" data-magellan-destination="experience">
 		<div class="row">
 			<div class="large-12 columns">
@@ -108,9 +108,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="div-mark" id="lecture" data-magellan-destination="lecture"></div>
+	<div class= 
 
-	<div class = "div-mark" id="features" data-magellan-destination="features"></div>
-	<div class="section features" data-magellan-destination="features" >
+	<div class="div-mark" id="features" data-magellan-destination="features"></div>
+	<div class="section features" data-magellan-destination="features">
 		<div class="row hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3b">
 			<h2 id="features-mark" class="features__head">Три речі, які важливі для дропшоперів (ІНТЕРНЕТЧИКІВ)</h2>
 			<div class="large-4 columns feature">
@@ -147,45 +149,49 @@
 		</div>
 	</div>
 
-	<div class = "div-mark" id="pricing-table" data-magellan-destination="pricing-table"></div>
+	<div class="div-mark" id="pricing-table" data-magellan-destination="pricing-table"></div>
 	<div class="row price-table" data-magellan-destination="pricing-table">
 		<div class="large-4 columns large-4-2">
 			<ul class="pricing-table">
 				<li class="title title_line4">Лекція</li>
+				<li class="description">120 хв.</li>
 				<li class="price">200 грн.</li>
-				<a class="price-table-toggle">Тривалість 2 год</a>
 				<ul class="price-table-features">
-					<li class="bullet-item">Ви дізнаєтесь як продавати в умовах пандемії</li>
+				<li class="bullet-item">Ви дізнаєтесь як продавати в умовах пандемії</li>
 				</ul>
 				<li class="cta-button"><a class="button secondary radius" href="#contact">Купити</a></li>
 			</ul>
 		</div>
 		<a id="pricing"></a>
-		<div class="large-4 columns large-4-2">
+		<div class="large-4 columns large-4-1">
 			<ul class="pricing-table featured">
-				<li class="title title_line2">Індивідуальне менторство</li>
-				<li class="price">2500 грн.</li>
-				<a class="price-table-toggle">Тривалість 2 тижні (5 лекцій)</a>
+				<li class="title title_line2">Індивідуальна консультація</li>
+				<li class="description">60-90 хв.</li>
+				<li class="price">1000 грн.</li>
 				<ul class="price-table-features">
-					<li class="bullet-item"> Побудова процесу продажів під ключ із гарантією результату </li>
+					<li class="bullet-item"> Розбір вашого бізнесу та рекомендації, як покращити бізнес процеси </li>
 				</ul>
 				<li class="cta-button"><a class="button radius" href="#contact">Купити</a></li>
 			</ul>
 		</div>
-		<div class="large-4 columns" id = "pricing_l" data-magellan-destination="pricing_l">
+		<div class="large-4 columns" id="pricing_l" data-magellan-destination="pricing_l">
 			<ul class="pricing-table">
-			  <li class="title ">Навчання по налаштуванню роботи з дроперами</li>
-			  <li class="price">14 000 грн</li>
-			  <ul class="price-table-features">
-				  <li class="bullet-item">6 практичних уроків, індивідуальний розбір кожгого учасника навчання</li>
-			  </ul>
-			  <li class="cta-button"><a class="button radius" href="#contact">Забронювати</a></li>
+				<li class="title ">
+					Навчання в групі. Лише практика
+				</li>
+				<li class="description"> 6 практичних уроків, індивідуальний розбір кожгого учасника навчання</li>
+
+				<li class="price">14 000 грн</li>
+				<ul class="price-table-features">
+					<li class="bullet-item">Навчання по налаштуванню роботи з дроперами</li>
+				</ul>
+				<li class="cta-button"><a class="button radius" href="#contact">Забронювати</a></li>
 			</ul>
 		</div>
 	</div>
 	</div>
 
-	<div class = "div-mark" id="contact" data-magellan-destination="contact"></div>
+	<div class="div-mark" id="contact" data-magellan-destination="contact"></div>
 	<div class="section contact gray" data-magellan-destination="contact">
 		<div class="row">
 			<div class="large-12 columns">
@@ -197,10 +203,11 @@
 					<input name="name" type="text" placeholder="Ваше ім'я" /> <br>
 					<input name="email" type="text" placeholder="Телефон" /> <br>
 					<label>Текст повідомлення</label>
-					<textarea cols="32" name="message" rows="10" >  </textarea> <br>
-					<a href="http://gib-education"><button type="submit" value="Відправити" class="email_btn" >Відправити</button>	</a>
+					<textarea cols="32" name="message" rows="10">  </textarea> <br>
+					<a href="http://gib-education"><button type="submit" value="Відправити"
+							class="email_btn">Відправити</button> </a>
 				</form>
-				
+
 			</div>
 		</div>
 	</div>
